@@ -1,0 +1,568 @@
+html,
+body {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top right, rgb(13, 9, 66), rgb(79, 79, 79));
+}
+
+h2,
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+header {
+  height: 4rem;
+  padding: 0rem 8rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header .first-container {
+  width: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-container img {
+  width: 70px;
+  height: 40px;
+}
+
+header .second-container {
+  margin: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.second-container a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+header .third-container {
+  width: 10rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.third-container a {
+  padding: 3px;
+  border-radius: 2rem;
+  transition: transform linear 0.15s;
+}
+
+.third-container a:hover {
+  background-color: rgb(79, 79, 79);
+}
+
+.third-container img {
+  width: 23px;
+  height: 23px;
+
+  transform: rotate(-45deg);
+  transition: transform linear 0.15s;
+}
+
+.third-container img:hover {
+  transform: rotate(0deg);
+}
+
+main {
+  padding: 0rem 8rem;
+}
+
+.container-one {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  flex: 1;
+}
+
+.container-one .welcome-text {
+  width: 25rem;
+  line-height: inherit;
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.welcome-text .skill-text {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container-two {
+  margin-bottom: 40px;
+
+  display: flex;
+  flex: 1;
+}
+
+.container-two .details-container {
+  max-width: 35rem;
+}
+
+.details-container #about-text,
+.container-four #experience-header,
+.container-seven #education-text {
+  margin-bottom: 30px;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.details-container .info-text {
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.friends-container {
+  margin-top: 50px;
+}
+
+.friends-container .container-two-one {
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.friends-container .image-container {
+  margin: auto 0;
+}
+
+.image-container .image-navigation {
+  position: relative;
+}
+
+.image-navigation .prev,
+.image-navigation .next {
+  font-size: 25px;
+  font-weight: bold;
+
+  position: absolute;
+  bottom: -50%;
+  z-index: 100;
+}
+
+.image-navigation .prev {
+  left: 10px;
+}
+
+.image-navigation .next {
+  right: 10px;
+}
+
+.image-navigation .nav-button {
+  background-color: rgba(255, 255, 255, 0.55);
+  width: 30px;
+  height: 30px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.image-navigation .nav-button:hover {
+  background: rgb(148, 148, 148);
+}
+
+.image-container .view-image {
+  margin-top: 20px;
+
+  transition: all 0.3s ease;
+}
+
+.view-image img {
+  border: 8px solid white;
+  height: 300px;
+
+  transition: all 0.3s ease;
+}
+
+.view-image .view-item {
+  display: none;
+}
+
+.view-image .main {
+  display: block;
+}
+
+.view-item .caption {
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-three {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-three .top-container {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px 0px;
+}
+
+.container-three .bottom-container {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-container .bottom-left,
+.bottom-container .bottom-right {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-left .bottom-left-section,
+.bottom-right .bottom-right-section {
+  width: 100%;
+  display: flex;
+}
+
+.bottom-left-section .left-date,
+.bottom-right-section .right-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bottom-left .bottom-left-text,
+.bottom-right .bottom-right-text {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.container-four {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-four .experience-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-section .first-experience-section,
+.experience-section .second-experience-section,
+.container-five .voluntary-section,
+.container-seven .education-section {
+  /* background-color: rgb(21, 20, 54); */
+  background: linear-gradient(to top right, rgb(79, 79, 79), rgb(13, 9, 66));
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.experience-section .first-experience-section {
+  margin-bottom: 30px;
+}
+
+.first-experience-section .first-experience-heading,
+.second-experience-section .second-experience-heading,
+.voluntary-section .voluntary-heading {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.first-experience-section .first-experience-comp,
+.second-experience-section .second-experience-comp,
+.voluntary-section .voluntary-comp {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.first-experience-section .first-experience-date,
+.second-experience-section .second-experience-date,
+.voluntary-section .voluntary-date {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.first-experience-section .first-experience-container,
+.second-experience-section .second-experience-container,
+.voluntary-section .voluntary-container {
+  font-size: 13px;
+}
+
+.first-experience-container ul,
+.second-experience-container ul,
+.voluntary-container ul {
+  padding-left: 15px;
+  margin: auto 0;
+}
+
+.container-five {
+  margin-bottom: 30px;
+}
+
+.container-five h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.container-six {
+  margin: 50px 0px;
+}
+
+.container-six .activities-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.activities-section .first-activity,
+.activities-section .second-activity,
+.activities-section .third-activity {
+  background: rgb(177, 176, 176);
+  color: rgb(21, 19, 52);
+  transition: all 0.54s ease-in-out;
+}
+
+.activities-section .first-activity:hover,
+.activities-section .second-activity:hover,
+.activities-section .third-activity:hover {
+  color: rgb(131, 130, 130);
+  border-radius: 10px;
+  background-color: rgb(21, 19, 52);
+  -moz-transition: background 0.54s ease-in-out;
+  -ms-transition: background 0.54s ease-in-out;
+  -o-transition: background 0.54s ease-in-out;
+  -webkit-transition: background 0.54s ease-in-out;
+  -moz-box-shadow: -2px -2px 2px 1px rgb(103, 103, 103),
+    -2px -2px 0px 0px lightgray;
+  -o-box-shadow: -2px -2px 2px 1px rgb(103, 103, 103),
+    -2px -2px 0px 0px lightgray;
+  -ms-box-shadow: -2px -2px 2px 1px rgb(103, 103, 103),
+    -2px -2px 0px 0px lightgray;
+  -webkit-box-shadow: -2px -2px 2px 1px rgb(103, 103, 103),
+    -2px -2px 0px 0px lightgray;
+  box-shadow: -2px -2px 2px 1px rgb(103, 103, 103), -2px -2px 0px 0px lightgray;
+}
+
+.first-activity h4,
+.second-activity h4,
+.third-activity h4 {
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.first-activity div,
+.second-activity div,
+.third-activity div {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.first-activity h4:hover,
+.second-activity h4:hover,
+.third-activity h4:hover,
+.first-activity div li:hover,
+.second-activity div li:hover,
+.third-activity div li:hover {
+  color: white;
+}
+
+.education-section .education-comp {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.education-section .education-dept,
+.education-section .education-grade,
+.education-section .education-date {
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.education-section span {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+footer {
+  margin-top: 80px;
+  padding: 0rem 8rem;
+}
+
+/* footer .footer-section {
+  background-color: rgba(94, 92, 92, 0.35);
+} */
+
+.footer-section .footer-heading {
+  font-size: 40px;
+  padding: 20px 0px;
+}
+
+.footer-section .top-section {
+  /* border: 2px dashed white; */
+  width: 80%;
+
+  display: flex;
+  flex: 1;
+}
+
+.top-section .left-top-section,
+.top-section .right-top-section {
+  width: 30%;
+  margin-right: 40px;
+
+  position: relative;
+}
+
+.left-top-section p,
+.right-top-section p {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.left-top-section div,
+.right-top-section div {
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.left-top-section div:hover,
+.right-top-section div:hover {
+  transform: translateX(10px);
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media only screen and (min-width: 780.1px) {
+  header,
+  main,
+  footer {
+    padding: 0rem 6rem;
+  }
+
+  .second-container a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  header,
+  main,
+  footer {
+    padding: 0rem 1rem;
+  }
+
+  header .first-container {
+    width: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .first-container img {
+    width: 40px;
+    height: 30px;
+  }
+
+  header .second-container {
+    margin: 0 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+
+  .second-container a {
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    margin: 0px 5px;
+  }
+
+  header .third-container {
+    width: 6rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .third-container a {
+    padding: 3px;
+    border-radius: 2rem;
+    transition: transform linear 0.15s;
+  }
+
+  .third-container a:hover {
+    background-color: rgb(79, 79, 79);
+  }
+
+  .third-container img {
+    width: 15px;
+    height: 15px;
+
+    transform: rotate(-45deg);
+    transition: transform linear 0.15s;
+  }
+
+  .third-container img:hover {
+    transform: rotate(0deg);
+  }
+
+  .container-six .activities-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .container-one .welcome-text {
+    width: 20rem;
+  }
+
+  .left-top-section div,
+  .right-top-section div {
+    font-weight: 200;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+  }
+}
